@@ -6,21 +6,16 @@
 
 .main{
     display: flex;
-    padding: 20px;
+    padding: 20px 0px;
     width: calc(100vw - 40px);
 }
 
 .toolbox{
-    width: 19vw;
+    width: 9vw;
     padding: 1vw;
     text-align: center;
     background: #eee7e7;
 
-}
-.toolbox p{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
 }
 .ele{
     font-size: 17px;
@@ -30,24 +25,34 @@
     padding: 10px;
    
 }
-.canvas{
-    width: 50vw;
+#dropzone{
+    position: relative;
+    width: 70vw;
     border: 1px dashed black;
-    margin-left: 4vw;
+    margin-left: 2vw;
+    right: 20px;
+    overflow: hidden;
 }
+
+
+.nwele{
+    position: absolute; /* Important */
+    padding: 10px;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+
 .editor{
-    width: 19vw;
+    position: absolute;
+    width: 15vw;
     padding: 1vw;
     text-align: center;
     background-color: #eee7e7;
-    margin-left: 4vw;
-}
-.editor p{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    right: 0;
 }
 .editor input{
+    width: 15vw;
     margin-top: 5px;
     text-align: center;
 }

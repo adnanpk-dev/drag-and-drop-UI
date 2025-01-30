@@ -5,29 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drag And Drop Components Builder</title>
     <link rel="stylesheet" href="main.css" >
+
 </head>
 <body>
 
     <div class="main">
         <div class="toolbox">
-            <p>Tools Box</p>
-            <div class="ele" draggable="true">Text</div>
-            <div class="ele" draggable="true">Heading</div>
-            <div class="ele" draggable="true">Button</div>
-            <div class="ele" draggable="true">Text Area</div>
-            <div class="ele" draggable="true">Input</div>
-            <div class="ele" draggable="true">Image</div>
-            <div class="ele" draggable="true">Video</div>
-            <div class="ele" draggable="true">Audio</div>
-            <div class="ele" draggable="true">Div</div>
+          
+            <div class="ele" draggable="true" data-type='p'>Text</div>
+            <div class="ele" draggable="true" data-type='h2'>Heading</div>
+            <div class="ele" draggable="true" data-type='button'>Button</div>
+            <div class="ele" draggable="true" data-type='textarea'>Text Area</div>
+            <div class="ele" draggable="true" data-type='input'>Input</div>
+            <div class="ele" draggable="true" data-type='img'>Image</div>
+            <div class="ele" draggable="true" data-type='video'>Video</div>
+            <div class="ele" draggable="true" data-type='audio'>Audio</div>
+            <div class="ele" draggable="true" data-type='div'>Div</div>
         </div>
 
-        <div class="canvas" id="canvas">
+        <div id="dropzone">
             
         </div>
 
         <div class="editor" id="editor">
-            <p>Edit</p>
             <input type="text" id="Text" placeholder="Add Text">
             <input type="text" id="Width" placeholder="Width px">
             <input type="text" id="Height" placeholder="Height px">
@@ -38,5 +38,8 @@
 
     </div>
     
+
+
+    <script src="app.js"></script>
 </body>
 </html>
